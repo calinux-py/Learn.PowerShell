@@ -62,6 +62,37 @@ For example, you can use the following command to return only the Examples secti
 Get-Help Get-FileHash -Examples
 ```
 
+Because this output is difficult to read, you decide to use an alternative that is less verbose. That is, you use the `help` alias.
+
+Enter the `help` command:
+```powershell
+help Get-FileHash
+```
+
+# Discover objects
+
+When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all the available information for the response. To know more about what's being returned and how you can modify what is returned, you can use the command `Get-Member`.
+
+The `Get-Member` cmdlet is meant to be piped on top of the command you run so that you can filter the output. A typical command-line invocation of `Get-Member` might look like the following example:
+
+```powershell
+Get-Process -Name 'name-of-process' | Get-Member
+```
+
+This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
+
+
+# Filter a Get-Member result by using Select-Object
+
+When you run `Get-Member`, the result is verbose. That is, many rows are returned. The object might have properties, like events and methods. To make the answer less verbose, you can filter on specific columns and also decide which columns to display. Keep in mind that the returned answer is already a subset of all the columns in the response.
+
+Take a look at a `Get-Member` response that includes many columns. By introducing the `Select-Object` cmdlet, you can choose which columns appear in the response. The command expects either a comma-separated list of column names or a wildcard character, such as an asterisk (`*`), which indicates all columns.
+
+When you use the `Select-Object` command in the context of `Select-Object Name, MemberType`, you specify only the columns you want. In this case, the columns are `Name` and `MemberType`. The command line would look like this:
+
+```powershell
+Get-Process -Name 'name-of-process' | Get-Member | Select-Object Name, MemberType
+```
 
 --------------------------
 
