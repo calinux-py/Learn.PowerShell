@@ -20,6 +20,8 @@ Get-Command -Verb Get -Noun a-noun*
 ```
 Now you've narrowed the search to specify that the verb part needs to match Get, and the noun part needs to match a-noun.
 
+By using one or possibly two parameters, you can quickly find the cmdlet you need.
+
 ----------------------------
 
 Complete Example:
