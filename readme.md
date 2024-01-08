@@ -1,4 +1,4 @@
-## Get-Command
+# Get-Command
 
 PowerShell uses verbs, such as Get, and nouns, such as Random, to create cmdlets. This is called the verb-noun naming standard.
 Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string.
@@ -39,7 +39,7 @@ Get-Command -Verb Get -Noun File*
 
 --------------------------
 
-## Get-Help
+# Get-Help
 
 By using the built-in help system in PowerShell, you can find out more about a specific command. You use the `Get-Command` cmdlet to locate a command that you need. After you've located the command, you might want to know more about what the command does and various ways to call it.
 
@@ -69,7 +69,7 @@ Enter the `help` command:
 help Get-FileHash
 ```
 
-# Discover objects
+## Discover objects
 
 When a cmdlet runs, it returns an object. When you invoke a cmdlet, the response you see has been formatted and might not necessarily represent all the available information for the response. To know more about what's being returned and how you can modify what is returned, you can use the command `Get-Member`.
 
@@ -82,7 +82,7 @@ Get-Process -Name 'name-of-process' | Get-Member
 This command first produces an object result by calling `Get-Process`. That result is passed as an input to `Get-Member` by using the pipe (`|`). In return, you get a table result that includes the `Name`, `MemberType`, and `Definition` columns. You also get the type of the returned object.
 
 
-# Filter a Get-Member result by using Select-Object
+## Filter a Get-Member result by using Select-Object
 
 When you run `Get-Member`, the result is verbose. That is, many rows are returned. The object might have properties, like events and methods. To make the answer less verbose, you can filter on specific columns and also decide which columns to display. Keep in mind that the returned answer is already a subset of all the columns in the response.
 
@@ -113,11 +113,11 @@ When you call a command, the response is an object that contains many properties
 Get-Member
 ``` 
 
-## Get-ChildItem
+# Get-ChildItem
 
 **Get-ChildItem** is similar to the 'dir' command in the Windows Command Prompt or the 'ls' command in Unix-based systems. You can use it to list files and directories, filter them, and perform various operations on them within PowerShell.
 
-### Examples
+## Examples
 
 `Locate all .txt files.`
 ```powershell
