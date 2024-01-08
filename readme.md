@@ -27,6 +27,12 @@ Run the command Get-Command with the flag -Noun. Specify File* to find anything 
 Get-Command -Noun File*
 ```
 
+Run Get-Command. Specify the flags -Verb and -Noun.
+
+```powershell
+Get-Command -Verb Get -Noun File*
+```
+
 
 --------------------------
 
