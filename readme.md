@@ -1,8 +1,8 @@
 ## Cmdlets
 
 PowerShell uses verbs, such as Get, and nouns, such as Random, to create cmdlets. This is called the verb-noun naming standard.
-
 Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string.
+
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
 
