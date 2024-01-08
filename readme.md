@@ -20,6 +20,14 @@ Get-Command -Verb Get -Noun a-noun*
 ```
 Now you've narrowed the search to specify that the verb part needs to match Get, and the noun part needs to match a-noun.
 
+Complete Example:
+
+Run the command Get-Command with the flag -Noun. Specify File* to find anything related to files.
+```powershell
+Get-Command -Noun File*
+```
+
+
 --------------------------
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
