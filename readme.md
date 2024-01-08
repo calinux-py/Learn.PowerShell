@@ -1,4 +1,4 @@
-## Cmdlets
+## Get-Command
 
 PowerShell uses verbs, such as Get, and nouns, such as Random, to create cmdlets. This is called the verb-noun naming standard.
 Use flags to target either the verb or the noun in the command you want. The flag you specify expects a value that's a string.
@@ -35,6 +35,31 @@ Run Get-Command. Specify the flags -Verb and -Noun.
 
 ```powershell
 Get-Command -Verb Get -Noun File*
+```
+
+--------------------------
+
+## Get-Help
+
+By using the built-in help system in PowerShell, you can find out more about a specific command. You use the `Get-Command` cmdlet to locate a command that you need. After you've located the command, you might want to know more about what the command does and various ways to call it.
+
+You can use the `Get-Help` core cmdlet to learn more about a command. Typically, you invoke `Get-Help` by specifying it by name and adding the `-Name` flag that contains the name of the cmdlet you want to learn about. Here's an example:
+```powershell
+Get-Help -Name Get-Help
+```
+
+If you don't want to display the full help page, narrow the response by adding flags to your Get-Help command. Here are some flags you can use:
+
+- Full: Returns a detailed help page. It specifies information like parameters, inputs, and outputs that you don't get in the standard response.
+- Detailed: Returns a response that looks like the standard response, but it includes a section for parameters.
+- Examples: Returns only examples, if any exist.
+- Online: Opens a web page for your command.
+- Parameter: Requires a parameter name as an argument. It lists a specific parameter's properties.
+
+For example, you can use the following command to return only the Examples section of the help page.
+
+```powershell
+Get-Help Get-FileHash -Examples
 ```
 
 
