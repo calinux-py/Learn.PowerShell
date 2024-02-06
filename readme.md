@@ -1,3 +1,5 @@
+# My Favorites from PowerShell
+
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
 
 The Get-Command cmdlet lists all of the available cmdlets on your system. Filter the list to quickly find the command you need.
@@ -35,4 +37,10 @@ gci -recurse *notes*
 ```powershell
 gci -Path C:\ -recurse *item*
 ```
+--------------------------------
 
+# Interesting or HACKISH Commands:
+
+- `Get-StartApps` - Used to retrieve a list of Start menu apps and tiles for the current user on a Windows operating system.
+- `Set-Clipboard` - Used to set clipboard content. Essentially clipboard injection.
+- `Get-Clipboard` - Retrieve clipboard content.
