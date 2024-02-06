@@ -45,3 +45,7 @@ gci -Path C:\ -recurse *item*
 - `Set-Clipboard` - Used to set clipboard content. Essentially clipboard injection.
 - `Get-Clipboard` - Retrieve clipboard content.
 - `Get-LocalUser` - Return all local users on the system.
+
+# Not as interesting, but still mildly interesting:
+
+- `Get-FileHash` - Verify the integrity of a file by confirming its hash value. Companies often post hash values of their files online for integrity verification purposes. You can validate downloads using the Get-FileHash cmdlet.
