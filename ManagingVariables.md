@@ -142,17 +142,17 @@ Many of the scripts that you create will need to reference the current date or a
 A DateTime variable contains both the date and the time. You can use the DateTime variable properties to access specific parts of the date or time. The following table lists some of the properties available for a DateTime variable.
 
 
--------------------
-Property	Description
-Hour	Returns the hours of the time in 24-hour format.
-Minute	Returns the minutes of the time.
-Second	Returns the seconds of the time.
-TimeOfDay	Returns detailed information about the time of day, including hours, minutes, and seconds.
-Date	Returns only the date and not the time.
-DayOfWeek	Returns the day of the week, such as Monday.
-Month	Returns the month as a number.
-Year	Returns the year.
----------------------------
+
+Property -	Description
+Hour	- Returns the hours of the time in 24-hour format.
+Minute	- Returns the minutes of the time.
+Second -	Returns the seconds of the time.
+TimeOfDay -	Returns detailed information about the time of day, including hours, minutes, and seconds.
+Date -	Returns only the date and not the time.
+DayOfWeek -	Returns the day of the week, such as Monday.
+Month -	Returns the month as a number.
+Year -	Returns the year.
+
 
 
 
