@@ -144,14 +144,14 @@ A DateTime variable contains both the date and the time. You can use the DateTim
 
 
 Property -	Description
-Hour	- Returns the hours of the time in 24-hour format.
-Minute	- Returns the minutes of the time.
-Second -	Returns the seconds of the time.
-TimeOfDay -	Returns detailed information about the time of day, including hours, minutes, and seconds.
-Date -	Returns only the date and not the time.
-DayOfWeek -	Returns the day of the week, such as Monday.
-Month -	Returns the month as a number.
-Year -	Returns the year.
+- Hour	- Returns the hours of the time in 24-hour format.
+- Minute	- Returns the minutes of the time.
+- Second -	Returns the seconds of the time.
+- TimeOfDay -	Returns detailed information about the time of day, including hours, minutes, and seconds.
+- Date -	Returns only the date and not the time.
+- DayOfWeek -	Returns the day of the week, such as Monday.
+- Month -	Returns the month as a number.
+- Year -	Returns the year.
 
 
 
