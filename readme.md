@@ -36,6 +36,18 @@ $ip = "10.100.4.2"
 $ip.Split(".")
 ```
 
+You can store the output of commands into variables. For example:
+
+```powershell
+$users = Get-LocalUser
+```
+
+You can also work with specific objects within the array. For example:
+
+```powershell
+$user[2]
+```
+
 
 # Get-ChildItem
 
