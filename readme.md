@@ -48,6 +48,26 @@ You can also work with specific objects within the array. For example:
 $user[2]
 ```
 
+Create an array list:
+
+```powershell
+$nums = "0", "1", "2", "3"
+```
+
+The following command creates a hash table named $servers to store server names and IP addresses:
+
+```powershell
+$servers = @{"LON-DC1" = "172.16.0.10"; "LON-SRV1" = "172.16.0.11"}
+```
+
+Adding or removing items from a hash table is similar to an array list. You use the methods Add() and Remove(). For example:
+
+```powershell
+$servers.Add("LON-SRV2","172.16.0.12")
+$servers.Remove("LON-DC1")
+```
+
+
 
 # Get-ChildItem
 
