@@ -15,7 +15,13 @@ Get-Help
 When you call a command, the response is an object that contains many properties. Run the Get-Member core cmdlet to drill down into that response and learn more about it.
 ```powershell
 Get-Member
-``` 
+```
+
+You can also review the variables in memory by using the Get-Variable cmdlet:
+
+```powershell
+Get-Variable
+```
 
 # Get-ChildItem
 
@@ -37,6 +43,7 @@ gci -recurse *notes*
 ```powershell
 gci -Path C:\ -recurse *item*
 ```
+
 --------------------------------
 
 # Interesting or HACKISH Commands:
