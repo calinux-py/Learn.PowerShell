@@ -23,6 +23,20 @@ You can also review the variables in memory by using the Get-Variable cmdlet:
 Get-Variable
 ```
 
+You can review the length for a string variable and it returns the number of characters in the string. For example:
+
+```powershell
+$logFile.Length
+```
+
+You can split content, such as IP addresses. For example:
+
+```powershell
+$ip = "10.100.4.2"
+$ip.Split(".")
+```
+
+
 # Get-ChildItem
 
 **Get-ChildItem** is similar to the 'dir' command in the Windows Command Prompt or the 'ls' command in Unix-based systems. You can use it to list files and directories, filter them, and perform various operations on them within PowerShell.
