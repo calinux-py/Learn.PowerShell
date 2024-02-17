@@ -140,25 +140,21 @@ gci -Path C:\ -recurse *item*
 
 # Interesting or HACKISH Commands:
 
-| Cmdlet                    | Description                                                                                         |
-|---------------------------|-----------------------------------------------------------------------------------------------------|
-| Get-StartApps             | Used to retrieve a list of Start menu apps and tiles for the current user on a Windows operating system. |
-| Set-Clipboard             | Used to set clipboard content. Essentially clipboard injection.                                      |
-| Get-Clipboard             | Retrieve clipboard content.                                                                         |
-| Get-LocalUser             | Return all local users on the system.                                                               |
-| Get-NetFirewallProfile    | Gets properties for a firewall profile.                                                             |
-| Get-NetFirewallRule       | Gets properties for a firewall rule.                                                                |
-| Get-ComputerInfo          | Retrieves all system and operating system properties from the computer
- |
-| Get-Service               | Retrieves a list of all services on the computer
- |
-| Get-EventLog              | Retrieves events and event logs from local and remote computers (only available in Windows PowerShell 5.1)
- |
-| Get-Process               | Retrieves a list of all active processes on a local or remote computer
- |
-| Clear-EventLog            | Deletes all of the entries from the specified event logs on the local computer or on remote computers
- |
-| Clear-RecycleBin	        | Deletes the content of a computer's recycle bin
+| Cmdlet                  | Description                                                                                          |
+|-------------------------|------------------------------------------------------------------------------------------------------|
+| Get-StartApps           | Used to retrieve a list of Start menu apps and tiles for the current user on a Windows operating system. |
+| Set-Clipboard           | Used to set clipboard content. Essentially clipboard injection.                                       |
+| Get-Clipboard           | Retrieve clipboard content.                                                                          |
+| Get-LocalUser           | Return all local users on the system.                                                                |
+| Get-NetFirewallProfile  | Gets properties for a firewall profile.                                                              |
+| Get-NetFirewallRule     | Gets properties for a firewall rule.                                                                 |
+| Get-ComputerInfo        | Retrieves all system and operating system properties from the computer                               |
+| Get-Service             | Retrieves a list of all services on the computer                                                     |
+| Get-EventLog            | Retrieves events and event logs from local and remote computers (only available in Windows PowerShell 5.1) |
+| Get-Process             | Retrieves a list of all active processes on a local or remote computer                               |
+| Clear-EventLog          | Deletes all of the entries from the specified event logs on the local computer or on remote computers |
+| Clear-RecycleBin        | Deletes the content of a computer's recycle bin                                                       |
+
 
 
 
