@@ -103,10 +103,10 @@ Remove an account from Active Directory:
 Remove-ADUser <username>
 ```
 
-Create a new user account in Active Directory:
+Create a new user account and set it to change password at next logon, assign it a temp password to enable it, and then enable the account:
 
 ```powershell
-New-ADUser -Name <account name> -AccountPassword <password>
+New-ADUser <username> -ChangePasswordAtLogon $true; Set-ADAccountPassword <username>; EnableADAccount <username>
 ```
 
 
