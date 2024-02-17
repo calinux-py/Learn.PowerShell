@@ -148,6 +148,8 @@ gci -Path C:\ -recurse *item*
 | Get-LocalUser             | Return all local users on the system.                                                               |
 | Get-NetFirewallProfile    | Gets properties for a firewall profile.                                                             |
 | Get-NetFirewallRule       | Gets properties for a firewall rule.                                                                |
+| Get-ComputerInfo          | Retrieves all system and operating system properties from the computer
+                                                             |
 
 
 # Not as interesting, but still mildly interesting:
