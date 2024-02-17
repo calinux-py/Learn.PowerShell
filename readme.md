@@ -135,12 +135,15 @@ gci -Path C:\ -recurse *item*
 
 # Interesting or HACKISH Commands:
 
-- `Get-StartApps` - Used to retrieve a list of Start menu apps and tiles for the current user on a Windows operating system.
-- `Set-Clipboard` - Used to set clipboard content. Essentially clipboard injection.
-- `Get-Clipboard` - Retrieve clipboard content.
-- `Get-LocalUser` - Return all local users on the system.
-- `Get-NetFirewallProfile` - Gets properties for a firewall profile.
-- `Get-NetFirewallRule` - Gets properties for a firewall rule
+| Cmdlet                    | Description                                                                                         |
+|---------------------------|-----------------------------------------------------------------------------------------------------|
+| Get-StartApps             | Used to retrieve a list of Start menu apps and tiles for the current user on a Windows operating system. |
+| Set-Clipboard             | Used to set clipboard content. Essentially clipboard injection.                                      |
+| Get-Clipboard             | Retrieve clipboard content.                                                                         |
+| Get-LocalUser             | Return all local users on the system.                                                               |
+| Get-NetFirewallProfile    | Gets properties for a firewall profile.                                                             |
+| Get-NetFirewallRule       | Gets properties for a firewall rule.                                                                |
+
 
 # Not as interesting, but still mildly interesting:
 
