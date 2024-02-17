@@ -84,12 +84,6 @@ Display all Active Directory users and their properities:
 Get-ADUser -Filter * -Properties *
 ```
 
-Search by username:
-
-```powerhshell
-Get-ADUser -Filter "SamAccountName -eq 'jbarrett'"
-```
-
 Disable an account in Active Directory:
 
 ```powershell
