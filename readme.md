@@ -120,6 +120,14 @@ Create a new user account and set it to change password at next logon, assign it
 New-ADUser <username> -ChangePasswordAtLogon $true; Set-ADAccountPassword <username>; EnableADAccount <username>
 ```
 
+Disable an account in a specific OU:
+
+*To make it easy, run the `Get-ADUser <username>` and then copy the `DistinguishedName:` line. Example, `CN=Bob Segar,OU=Staff,OU=TestLawFirm,DC=VMW,DC=com`
+
+```powershell
+Disable-ADAccount -Identity "CN=Bob Segar,OU=Staff,OU=TestLawFirm,DC=VMW,DC=com"
+```
+
 
 # Get-ChildItem
 
