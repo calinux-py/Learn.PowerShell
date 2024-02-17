@@ -79,6 +79,24 @@ Display all Active Directory users and their properities:
 Get-ADUser -Filter * -Properties *
 ```
 
+Disable an account in Active Directory:
+
+```powershell
+Disable-ADAccount <username>
+```
+
+Enable an account in Active Directory:
+
+```powershell
+Enable-ADAccount <username>
+```
+
+Unlock user account in Active Directory that has been located after exceeding sign-in attempts:
+
+```powershell
+Unlock-ADAccount <username>
+```
+
 
 
 # Get-ChildItem
