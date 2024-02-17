@@ -7,6 +7,11 @@ The Get-Command cmdlet lists all of the available cmdlets on your system. Filter
 Get-Command
 ```
 
+The Microsoft.PowerShell.Management module includes many built-in cmdlets that can be used to obtain information and perform specific operations on a local computer. To review the cmdlets included in this module, you can enter the following:
+```powershell
+Get-command -module Microsoft.PowerShell.Management
+```
+
 Run the Get-Help core cmdlet to invoke a built-in help system. You can also run an alias help command to invoke Get-Help but improve the reading experience by paginating the response.
 ```powershell
 Get-Help
