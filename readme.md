@@ -67,6 +67,18 @@ $servers.Add("LON-SRV2","172.16.0.12")
 $servers.Remove("LON-DC1")
 ```
 
+Search for Active Directory users:
+
+```powershell
+Get-ADUser -Identity anabowman
+```
+
+Display all Active Directory users and their properities:
+
+```powershell
+Get-ADUser -Filter * -Properties *
+```
+
 
 
 # Get-ChildItem
