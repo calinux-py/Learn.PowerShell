@@ -139,6 +139,8 @@ gci -Path C:\ -recurse *item*
 - `Set-Clipboard` - Used to set clipboard content. Essentially clipboard injection.
 - `Get-Clipboard` - Retrieve clipboard content.
 - `Get-LocalUser` - Return all local users on the system.
+- `Get-NetFirewallProfile` - Gets properties for a firewall profile.
+- `Get-NetFirewallRule` - Gets properties for a firewall rule
 
 # Not as interesting, but still mildly interesting:
 
