@@ -103,6 +103,11 @@ Remove an account from Active Directory:
 Remove-ADUser <username>
 ```
 
+Create a new user account in Active Directory:
+
+```powershell
+New-ADUser -Name <account name> -AccountPassword <password>
+```
 
 
 # Get-ChildItem
