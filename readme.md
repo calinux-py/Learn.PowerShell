@@ -97,6 +97,12 @@ Unlock user account in Active Directory that has been located after exceeding si
 Unlock-ADAccount <username>
 ```
 
+Remove an account from Active Directory:
+
+```powershell
+Remove-ADUser <username>
+```
+
 
 
 # Get-ChildItem
