@@ -1,3 +1,16 @@
+# PowerShell Security
+
+Set Execution policies to `Restricted` for departments that dont need scripting.
+```powershell
+Set-ExecutionPolicy Restricted
+```
+
+Sign PowerShell scripts to authenticate them.
+```powershell
+Set-AuthenticodeSignature
+```
+
+
 # My Favorites from PowerShell
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
