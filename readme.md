@@ -16,7 +16,11 @@ Security Levels:
 - Root (High)
 - Kernel (Highest)
 
+As you move up the levels from User, the less permissions you will need to run scripts. Admin has more ability to run scripts than User, Root has more abiility to run script than Admin, and Kernel it essentially unchecked.
 
+Tools to run PowerShell scripts and help with escalated privileges:
+- PowerShell-Empire
+- PowerSploit
 
 
 # My Favorites from PowerShell
