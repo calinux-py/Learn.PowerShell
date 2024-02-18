@@ -1,3 +1,4 @@
+```powershell
 # If statements
 $temp = 60
 
@@ -77,6 +78,6 @@ $ages = @{
 }
 $johnAge = $ages["John"]
 Write-Host "John's age is $johnAge"
-
+```
 
 
