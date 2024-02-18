@@ -10,6 +10,14 @@ Sign PowerShell scripts to authenticate them.
 Set-AuthenticodeSignature
 ```
 
+Security Levels:
+- User (Lowest)
+- Admin (Medium)
+- Root (High)
+- Kernel (Highest)
+
+
+
 
 # My Favorites from PowerShell
 
