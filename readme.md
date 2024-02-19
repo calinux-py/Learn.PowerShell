@@ -16,6 +16,12 @@ To create a PowerShell module:
 Import-Module path\to\module
 ```
 
+To automatically add modules when you startup PowerShell, open your PowerShell profile and add:
+```
+$env:PSModulePath = $env:PSModulePath + ";path/to/modules"
+```
+
+
 # My Favorites from PowerShell
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
