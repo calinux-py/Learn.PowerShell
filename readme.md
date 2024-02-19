@@ -1,3 +1,12 @@
+# Basic Syntax Fun
+
+Logical Operators:
+- `-gt`: Greater than
+- `-ge`: Greater than or equal to
+- `-lt`: Less than
+- `-le`: Less than or equal to
+- `-eq`: Equal to
+
 # My Favorites from PowerShell
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
