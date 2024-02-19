@@ -191,7 +191,7 @@ gci -Path C:\ -recurse *item*
 
 # PowerShell Security
 
-PowerShell Ports:
+**PowerShell Ports:**
 - 5985
 - 5986
 
@@ -205,15 +205,15 @@ Sign PowerShell scripts to authenticate them.
 Set-AuthenticodeSignature
 ```
 
-Turn on PowerShell logging:
+**Turn on PowerShell logging:**
 
 `Group Policy > Computer Configuration > Administrative Templates > Windows Components > Windows PowerShell > Turn on module logging and add '*' to log all modules, Turn on PowerShell script block logging, Turn on Script Execution, Turn on PowerShell Transcription`
 
-Check Event Viewer logs for deeper logging check:
+**Check Event Viewer logs for deeper logging check:**
 
 `Event Viewer > Microsoft > Windows > PowerShell`
 
-Block PowerShell ports from remote access:
+**Block PowerShell ports from remote access:**
 
 `Windows Defender Firewall > Advanced Settings > Inbound Rules > Create new rule > Port > 5985, 5986 > Block Connection > Apply to all profiles > Name whatever`
 
