@@ -202,6 +202,12 @@ Set Execution policies to `Restricted` for departments that dont need scripting.
 Set-ExecutionPolicy Restricted
 ```
 
+Set Execution policies to `allsigned` or `remotesigned` for enchanced security.
+```powershell
+Set-ExecutionPolicy allsigned
+```
+
+
 Sign PowerShell scripts to authenticate them.
 ```powershell
 Set-AuthenticodeSignature
