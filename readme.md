@@ -223,6 +223,13 @@ Set-AuthenticodeSignature
 Set-Item <username>:\localhost\listener\listener*\port value <Port>
 ```
 
+**To update port on computers:**
+
+```powershell
+New-PSSession <ComputerName> <Netbios> -Port <Port>
+Enter-PSSession <ComputerName> <Netbios> -Port <Port>
+```
+
 
 Security Levels:
 - User (Lowest)
