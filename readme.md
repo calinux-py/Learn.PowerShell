@@ -201,6 +201,10 @@ Sign PowerShell scripts to authenticate them.
 Set-AuthenticodeSignature
 ```
 
+Turn on PowerShell logging:
+`Group Policy > Computer Configuration > Administrative Templates > Windows Components > Windows PowerShell > Turn on module logging and add '*' to log all modules, Turn on PowerShell script block logging, Turn on Script Execution, Turn on PowerShell Transcription`
+
+
 Security Levels:
 - User (Lowest)
 - Admin (Medium)
