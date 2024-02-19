@@ -204,6 +204,9 @@ Set-AuthenticodeSignature
 Turn on PowerShell logging:
 `Group Policy > Computer Configuration > Administrative Templates > Windows Components > Windows PowerShell > Turn on module logging and add '*' to log all modules, Turn on PowerShell script block logging, Turn on Script Execution, Turn on PowerShell Transcription`
 
+Check Event Viewer logs for deeper logging check:
+`Event Viewer > Microsoft > Windows > PowerShell`
+
 
 Security Levels:
 - User (Lowest)
