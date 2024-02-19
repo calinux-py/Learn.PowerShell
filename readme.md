@@ -1,4 +1,4 @@
-# Basic Syntax Fun
+# Things to Remember:
 
 Logical Operators:
 - `-gt`: Greater than
@@ -6,6 +6,15 @@ Logical Operators:
 - `-lt`: Less than
 - `-le`: Less than or equal to
 - `-eq`: Equal to
+
+To create a PowerShell module:
+- Add .psm1 to the script with a function name.
+- Create a folder called Modules.
+- Create a folder inside Modules with the name of the module and place .psm1 into it.
+- Import module by running command:
+```powershell
+Import-Module path\to\module
+```
 
 # My Favorites from PowerShell
 
