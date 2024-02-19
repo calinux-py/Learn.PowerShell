@@ -232,6 +232,8 @@ New-PSSession <ComputerName> <Netbios> -Port <Port>
 Enter-PSSession <ComputerName> <Netbios> -Port <Port>
 ```
 
+- PowerShell 2.0 is enabled by default on most servers. It is recommended to remove it. Go to server manager, Remove Roles and Features, and uninstall PowerShell 2.0.
+
 ------------------------------------
 
 Security Levels:
