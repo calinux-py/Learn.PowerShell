@@ -191,6 +191,8 @@ gci -Path C:\ -recurse *item*
 
 # PowerShell Security
 
+-----------------------------------------
+
 **PowerShell Ports:**
 - 5985
 - 5986
@@ -230,6 +232,7 @@ New-PSSession <ComputerName> <Netbios> -Port <Port>
 Enter-PSSession <ComputerName> <Netbios> -Port <Port>
 ```
 
+------------------------------------
 
 Security Levels:
 - User (Lowest)
