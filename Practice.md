@@ -1,4 +1,10 @@
-```powershell
+# Functions
+
+function Get-Time{
+    Get-Date -Format hh:mm
+}
+
+
 # If statements
 $temp = 60
 
@@ -78,6 +84,5 @@ $ages = @{
 }
 $johnAge = $ages["John"]
 Write-Host "John's age is $johnAge"
-```
 
 
