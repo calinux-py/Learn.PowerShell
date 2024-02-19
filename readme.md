@@ -55,6 +55,25 @@ You can also review the variables in memory by using the Get-Variable cmdlet:
 Get-Variable
 ```
 
+Verify if you have a PowerShell profile:
+
+```powershell
+Test-Path $Profile
+```
+
+Create a PowerShell profile:
+
+```powershell
+New-Item -Path $Profile -Type File -Force
+```
+
+Open PowerShell profile in notepad:
+
+```powershell
+notepad $profile
+```
+
+
 You can review the length for a string variable and it returns the number of characters in the string. For example:
 
 ```powershell
