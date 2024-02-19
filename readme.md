@@ -217,6 +217,12 @@ Set-AuthenticodeSignature
 
 `Windows Defender Firewall > Advanced Settings > Inbound Rules > Create new rule > Port > 5985, 5986 > Block Connection > Apply to all profiles > Name whatever`
 
+**Change PowerShell remote listening port (to allow remote access without listening on default ports):**
+
+```powershell
+Set-Item <username>:\localhost\listener\listener*\port value <Port>
+```
+
 
 Security Levels:
 - User (Lowest)
