@@ -1,31 +1,24 @@
-# PowerShell Security
-
-Set Execution policies to `Restricted` for departments that dont need scripting.
-```powershell
-Set-ExecutionPolicy Restricted
-```
-
-Sign PowerShell scripts to authenticate them.
-```powershell
-Set-AuthenticodeSignature
-```
-
-Security Levels:
-- User (Lowest)
-- Admin (Medium)
-- Root (High)
-- Kernel (Highest)
-
-As you move up the levels from User, the less permissions you will need to run scripts. Admin has more ability to run scripts than User, Root has more abiility to run script than Admin, and Kernel it essentially unchecked.
-
-Tools to run PowerShell scripts and help with escalated privileges:
-- PowerShell-Empire
-- PowerSploit
-
-
 # My Favorites from PowerShell
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
+
+Check what version of PowerShell you are running:
+
+```powershell
+$PSVersionTable
+```
+
+Check versions available:
+
+```powershell
+winget search Microsoft.PowerShell
+```
+
+Download newest version of Powershell:
+
+```
+winget install --id Microsoft.Powershell --source winget
+```
 
 The Get-Command cmdlet lists all of the available cmdlets on your system. Filter the list to quickly find the command you need.
 ```powershell
@@ -191,7 +184,31 @@ gci -Path C:\ -recurse *item*
 
 
 
-
 # Not as interesting, but still mildly interesting:
 
 - `Get-FileHash` - Verify the integrity of a file by confirming its hash value. Companies often post hash values of their files online for integrity verification purposes. You can validate downloads using the Get-FileHash cmdlet.
+
+
+# PowerShell Security
+
+Set Execution policies to `Restricted` for departments that dont need scripting.
+```powershell
+Set-ExecutionPolicy Restricted
+```
+
+Sign PowerShell scripts to authenticate them.
+```powershell
+Set-AuthenticodeSignature
+```
+
+Security Levels:
+- User (Lowest)
+- Admin (Medium)
+- Root (High)
+- Kernel (Highest)
+
+As you move up the levels from User, the less permissions you will need to run scripts. Admin has more ability to run scripts than User, Root has more abiility to run script than Admin, and Kernel it essentially unchecked.
+
+Tools to run PowerShell scripts and help with escalated privileges:
+- PowerShell-Empire
+- PowerSploit
