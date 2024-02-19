@@ -191,6 +191,10 @@ gci -Path C:\ -recurse *item*
 
 # PowerShell Security
 
+PowerShell Ports:
+- 5985
+- 5986
+
 Set Execution policies to `Restricted` for departments that dont need scripting.
 ```powershell
 Set-ExecutionPolicy Restricted
@@ -208,6 +212,10 @@ Turn on PowerShell logging:
 Check Event Viewer logs for deeper logging check:
 
 `Event Viewer > Microsoft > Windows > PowerShell`
+
+Block PowerShell ports from remote access:
+
+`Windows Defender Firewall > Advanced Settings > Inbound Rules > Create new rule > Port > 5985, 5986 > Block Connection > Apply to all profiles > Name whatever`
 
 
 Security Levels:
