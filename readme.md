@@ -1,11 +1,15 @@
 # Things to Remember:
 
+$$ Logical Operators
+
 Logical Operators:
 - `-gt`: Greater than
 - `-ge`: Greater than or equal to
 - `-lt`: Less than
 - `-le`: Less than or equal to
 - `-eq`: Equal to
+
+## PowerShell Modules
 
 To create a PowerShell module:
 - Add .psm1 to the script with a function name.
@@ -21,6 +25,16 @@ To automatically add modules when you startup PowerShell, open your PowerShell p
 $env:PSModulePath = $env:PSModulePath + ";path/to/modules"
 ```
 
+## PowerShell Gallery
+
+If you want to upload a module to PowerShell Gallery:
+- Create PowerShell .psm1 file with PowerShell function.
+- Create PowerShell .psd1 file with PowerShell module information, ensuring to fill out `RootModule`, `GUID`, `FileList`, `Prerelease`.
+- `RootModule` = 'YourModuleName.psm1'
+- `GUID` = '##########' (Get GUID by using: `New-Guid`)
+- `FileList` = @('YourModuleName.psm1')
+- `Prerelease` = 'Alpha'
+- Check `GalleryPSD1-Example.psd1` for more help
 
 # My Favorites from PowerShell
 
