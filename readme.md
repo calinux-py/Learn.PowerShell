@@ -44,6 +44,12 @@ Run following command:
 Publish-Module -Path "C:\Path\to\Module\" -NuGetApiKey YOUR-GALLERY-API-KEY
 ```
 
+Import PowerShell Gallery module (ADD: `-AllowPrerelease` if your module is prerelease:
+
+```powershell
+Install-Module -Name YourModuleName -AllowPrerelease
+```
+
 
 ### PowerShell Gallery Errors:
 - IF you receive `"The specified API key is invalid, has expired, or does not have permission to access the specified package."` - it is likely your module shares a name with another public module. Change your PowerShell module name for the directory, `.psm1`, and `.psd1` files.
