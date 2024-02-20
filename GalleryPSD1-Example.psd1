@@ -9,16 +9,16 @@
 @{
 
 # Script module or binary module file associated with this manifest.
-RootModule = 'YourModuleName.psm1'
+RootModule = 'CaliNuxTestLol.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.0.0'
+ModuleVersion = '1.1.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
 
 # ID used to uniquely identify this module
-GUID = '1c11ab51-4c1e-1111-8a1a-1f1c6f111db1'
+GUID = '8c28ab51-4c3e-4196-8a5a-9f9c6f373db1'
 
 # Author of this module
 Author = 'YourName'
@@ -48,7 +48,7 @@ VariablesToExport = '*'
 AliasesToExport = '*'
 
 # List of all files packaged with this module
-FileList = @('YourModuleName.psm1')
+FileList = @('CaliNuxTestLol.psm1')
 
 # Private data to pass to the module specified in RootModule/ModuleToProcess
 PrivateData = @{
@@ -69,8 +69,8 @@ PrivateData = @{
         # Release notes for this module
         ReleaseNotes = 'Release notes for your module here.'
         
-        # Prerelease string of this module
-        Prerelease = 'Alpha'
+        # Remove or comment out the Prerelease string of this module
+        # Prerelease = 'Alpha'
 
     } # End of PSData hashtable
 
