@@ -56,6 +56,11 @@ $string = [System.Text.Encoding]::UTF8.GetString($binary)
 
 # print the string
 $string
+
+# you can also convert strings to base64
+$base64 = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("Hello"))
 ```
+
+- You can also decode Base64 using `certutil`. `Certutil` is a command-line utility in Windows operating systems primarily designed for managing certificates. You can decode Base64 by simply running `certutil -f -decode path/to/file`.
 
 
