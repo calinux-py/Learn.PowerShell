@@ -48,6 +48,8 @@ Publish-Module -Path "C:\Path\to\Module\" -NuGetApiKey YOUR-GALLERY-API-KEY
 ### PowerShell Gallery Errors:
 - IF you receive `"The specified API key is invalid, has expired, or does not have permission to access the specified package."` - it is likely your module shares a name with another public module. Change your PowerShell module name for the directory, `.psm1`, and `.psd1` files.
 
+--------------------------------
+
 # My Favorites from PowerShell
 
 Three core cmdlets allow you to delve into what cmdlets exist and what they do:
