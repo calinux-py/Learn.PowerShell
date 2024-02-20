@@ -28,6 +28,7 @@ $env:PSModulePath = $env:PSModulePath + ";path/to/modules"
 ## PowerShell Gallery
 
 If you want to upload a module to PowerShell Gallery:
+- Create a new directory with the name of the new module.
 - Create PowerShell .psm1 file with PowerShell function.
 - Create PowerShell .psd1 file with PowerShell module information, ensuring to fill out `RootModule`, `GUID`, `FileList`, `Prerelease`.
 - `RootModule` = 'YourModuleName.psm1'
@@ -35,6 +36,17 @@ If you want to upload a module to PowerShell Gallery:
 - `FileList` = @('YourModuleName.psm1')
 - `Prerelease` = 'Alpha'
 - Check `GalleryPSD1-Example.psd1` for more help
+- Grab API from [PowerShell Gallery](https://www.powershellgallery.com/account/apikeys)
+
+Run following command:
+
+```powershell
+Publish-Module -Path "C:\Path\to\Module\" -NuGetApiKey YOUR-GALLERY-API-KEY
+```
+
+
+### PowerShell Gallery Errors:
+- IF you receive `"The specified API key is invalid, has expired, or does not have permission to access the specified package."` - it is likely your module shares a name with another public module. Change your PowerShell module name for the directory, `.psm1`, and `.psd1` files.
 
 # My Favorites from PowerShell
 
