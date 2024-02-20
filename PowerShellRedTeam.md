@@ -63,4 +63,11 @@ $base64 = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes
 
 - You can also decode Base64 using `certutil`. `Certutil` is a command-line utility in Windows operating systems primarily designed for managing certificates. You can decode Base64 by simply running `certutil -f -decode path/to/file`.
 
+# Evasion:
 
+- Just as you can run commands from Base64 in PowerShell, you can also convert command output to Base64 to conceal it.
+
+For example, if you wanted to convert the output of the ipconfig command to Base64:
+```powershell
+$output = [System.Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes((ipconfig)))
+```
