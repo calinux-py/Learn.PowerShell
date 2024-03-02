@@ -145,6 +145,7 @@ function Get-ActiveConnections {
 
     $htmlit | Out-File -FilePath $outputit
     Write-Host "HTML report has been generated at: $outputit"
+    Start-Process $outputit
 }
 
 Get-ActiveConnections
