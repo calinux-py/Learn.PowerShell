@@ -216,6 +216,11 @@ Disable an account in a specific OU:
 Disable-ADAccount -Identity "CN=Bob Segar,OU=Staff,OU=TestLawFirm,DC=VMW,DC=com"
 ```
 
+Locate files within the directories specified in your system's PATH environment variable, as well as in the current directory. We will search for ipconfig in this example:
+```
+where.exe *ipconfig*
+```
+
 
 # Get-ChildItem
 
