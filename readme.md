@@ -252,6 +252,11 @@ gci -Path C:\ -recurse *item*
 Get-ADUser -Filter * | Select-Object SamAccountName, Enabled
 ```
 
+`Search by Active Directory users by first name.`
+```powershell
+Get-ADUser -Filter {GivenName -eq "firstname"}
+```
+
 --------------------------------
 
 # Interesting or HACKISH Commands:
