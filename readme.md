@@ -257,6 +257,11 @@ Search by Active Directory users by first name.
 Get-ADUser -Filter {GivenName -eq "firstname"}
 ```
 
+Display all Organizational Units.
+```powershell
+Get-ADOrganizationalUnit -Filter *
+```
+
 --------------------------------
 
 # Interesting or HACKISH Commands:
