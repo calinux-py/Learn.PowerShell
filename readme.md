@@ -245,6 +245,15 @@ gci -Path C:\ -recurse *item*
 
 --------------------------------
 
+# Active Directory Cmdlets\Scripts
+
+`Display all Active Directory users by their account name.`
+```powershell
+Get-ADUser -Filter * | Select-Object SamAccountName
+```
+
+--------------------------------
+
 # Interesting or HACKISH Commands:
 
 | Cmdlet                  | Description                                                                                          |
