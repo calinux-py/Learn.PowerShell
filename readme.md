@@ -208,6 +208,11 @@ Create a new user account and set it to change password at next logon, assign it
 New-ADUser <username> -ChangePasswordAtLogon $true; Set-ADAccountPassword <username>; EnableADAccount <username>
 ```
 
+Search for name, check if it is enabled or disabled, and check last logon:
+```powershell
+Get-ADUser <username> -Properties LastLogonDate | Select-Object SamAccountName, Enabled, LastLogonDate
+```
+
 Disable an account in a specific OU:
 
 *To make it easy, run the `Get-ADUser <username>` and then copy the `DistinguishedName:` line. Example, `CN=Bob Segar,OU=Staff,OU=TestLawFirm,DC=VMW,DC=com`
