@@ -228,17 +228,17 @@ where.exe *ipconfig*
 
 ## Examples
 
-`Locate all .txt files.`
+Locate all .txt files.
 ```powershell
 gci -recurse *.txt
 ```
 
-`Locate certain words.`
+Locate certain words.
 ```powershell
 gci -recurse *notes*
 ```
 
-`Search a specific drive.`
+Search a specific drive.
 ```powershell
 gci -Path C:\ -recurse *item*
 ```
@@ -247,12 +247,12 @@ gci -Path C:\ -recurse *item*
 
 # Active Directory Cmdlets\Scripts
 
-`Display all Active Directory users by their account name and check if they are enabled or disabled.`
+Display all Active Directory users by their account name and check if they are enabled or disabled.
 ```powershell
 Get-ADUser -Filter * | Select-Object SamAccountName, Enabled
 ```
 
-`Search by Active Directory users by first name.`
+Search by Active Directory users by first name.
 ```powershell
 Get-ADUser -Filter {GivenName -eq "firstname"}
 ```
