@@ -272,6 +272,11 @@ Display all Active Directory computers.
 Get-ADComputer -Filter *
 ```
 
+Search for name, check if it is enabled or disabled, and check last logon.
+```powershell
+Get-ADUser <username> -Properties LastLogonDate | Select-Object SamAccountName, Enabled, LastLogonDate
+```
+
 --------------------------------
 
 # Interesting or HACKISH Commands:
