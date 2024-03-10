@@ -247,9 +247,9 @@ gci -Path C:\ -recurse *item*
 
 # Active Directory Cmdlets\Scripts
 
-`Display all Active Directory users by their account name.`
+`Display all Active Directory users by their account name and check if they are enabled or disabled.`
 ```powershell
-Get-ADUser -Filter * | Select-Object SamAccountName
+Get-ADUser -Filter * | Select-Object SamAccountName, Enabled
 ```
 
 --------------------------------
