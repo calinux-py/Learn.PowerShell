@@ -262,6 +262,11 @@ Display all Organizational Units.
 Get-ADOrganizationalUnit -Filter *
 ```
 
+Display all Active Directory computers.
+```powershell
+Get-ADComputer -Filter *
+```
+
 --------------------------------
 
 # Interesting or HACKISH Commands:
