@@ -1,4 +1,8 @@
 # Created to easily setup new client computers onto the domain.
+# Time zone: -t [EST, PST, CST]
+# Perferred DNS: -d
+# Alternative DNS: -a
+# Set IPv4 to DHCP: -dhcp
 
 function Start-Setup {
     param(
