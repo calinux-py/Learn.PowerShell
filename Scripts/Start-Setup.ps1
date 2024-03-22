@@ -46,7 +46,9 @@ function Start-Setup {
     
 
     sysdm.cpl
+    sleep 1
     Start-Process "ms-settings:windowsupdate"
+    sleep 1
     ncpa.cpl
 
     Write-Host "Running quick checks..."
