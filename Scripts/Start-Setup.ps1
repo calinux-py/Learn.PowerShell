@@ -1,3 +1,5 @@
+# Created to easily setup new client computers onto the domain.
+
 function Start-Setup {
     param(
         [Parameter(Mandatory=$true)]
