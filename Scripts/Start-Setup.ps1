@@ -52,9 +52,9 @@ function Start-Setup {
     ncpa.cpl
 
     Write-Host "Running quick checks..."
-    ipconfig /release
-    ipconfig /renew
-    ipconfig /flushdns
+    ipconfig /release > $null
+    ipconfig /renew > $null
+    ipconfig /flushdns > $null
     Write-Host "Script execution completed."
 }
 
