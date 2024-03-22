@@ -37,16 +37,25 @@ function Start-Setup {
         Write-Host "Configuring IPv4 settings to use DHCP."
         Set-NetIPInterface -InterfaceAlias "Ethernet0" -Dhcp Enabled
     } else {
-        Write-Host "Updating DNS settings: Preferred DNS is $d, Alternate DNS is $a."
-        Set-DnsClientServerAddress -InterfaceIndex $interfaceIndex -ServerAddresses ($d, $a)
-        Write-Host "DNS settings updated: Preferred DNS is $d, Alternate DNS is $a."
+        Write-Host "Did not touch IPv4"
     }
+        
+    Write-Host "Updating DNS settings: Preferred DNS is $d, Alternate DNS is $a."
+    Set-DnsClientServerAddress -InterfaceIndex $interfaceIndex -ServerAddresses ($d, $a)
+    Write-Host "DNS settings updated: Preferred DNS is $d, Alternate DNS is $a."
+    
 
     sysdm.cpl
     Start-Process "ms-settings:windowsupdate"
     ncpa.cpl
+
+    Write-Host "Running quick checks..."
+    ipconfig /release
+    ipconfig /renew
+    ipconfig /flushdns
     Write-Host "Script execution completed."
 }
 
 # Example usage
 # Start-Setup -t "EST" -d "192.168.1.120" -a "8.8.8.8" [optional] -dhcp
+
