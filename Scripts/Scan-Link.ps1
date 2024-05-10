@@ -21,6 +21,8 @@ function ScanDat {
     param (
         [string]$address
     )
+    
+
     try {
         if (-not $address) {
             return "Please provide a link."
@@ -47,6 +49,11 @@ function ScanDat {
 
         $response = Invoke-WebRequest -Uri $url -Headers $headers
         $responseContent = $response.Content
+        $responseContent = $response.Content
+        if ($responseContent -like 'Malicious URL Scanner*') {
+            return "Invalid URL. Please ensure the URL has a prefix."
+        }
+
 
         $text = ($responseContent -split "<(script|style).*?>|<.*?>") -join ' ' | ForEach-Object { $_.Trim() }
 
@@ -99,8 +106,13 @@ function ScanDat {
             Write-Host "`n`nOverall Risk: Clean URL - SAFE" -ForegroundColor Green
             $modifiedText = $modifiedText -replace "Overall Risk: Clean URL - SAFE", ""
         }
+        if ($modifiedText -match "Malicious URL Scanner") {
+            return "Invalid URL. Please make sure the URL has the full prefix."
+        }
+
 
         return $modifiedText
+        
     }
     catch {
         if ($_.Exception.Response.StatusCode.value__ -eq 503) {
@@ -118,6 +130,7 @@ function Scan-Link {
         [string]$u
     )
     $result = ScanDat -address $u
+    
     Write-Output $result
 }
 
