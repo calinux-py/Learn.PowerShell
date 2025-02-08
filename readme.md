@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/25ecee1f-1892-4f51-a0b8-bb952cea4d1a)# Things to Remember:
+# Things to Remember:
 
 $$ Logical Operators
 
