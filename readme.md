@@ -1,4 +1,4 @@
-# Things to Remember:
+![image](https://github.com/user-attachments/assets/25ecee1f-1892-4f51-a0b8-bb952cea4d1a)# Things to Remember:
 
 $$ Logical Operators
 
@@ -44,6 +44,11 @@ Run following command:
 ```powershell
 Publish-Module -Path "C:\Path\to\Module\" -NuGetApiKey YOUR-GALLERY-API-KEY
 ```
+- Go back to PowerShell Gallery API and edit the newly created API key.
+- Select the package which was just uploaded (refresh if it doesn't appear).
+
+![image](https://github.com/user-attachments/assets/e157a452-6bef-469a-99c6-346e4c420ff7)
+
 
 Import PowerShell Gallery module:
 
