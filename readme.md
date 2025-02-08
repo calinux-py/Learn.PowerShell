@@ -37,7 +37,8 @@ If you want to upload a module to PowerShell Gallery:
 - `FileList` = @('YourModuleName.psm1')
 - Check `GalleryPSD1-Example.psd1` for more help
 - Grab API from [PowerShell Gallery](https://www.powershellgallery.com/account/apikeys)
-- When filling out the API Key, make sure to enter `*` as the GLOB for now.
+- When filling out the API Key, make sure to enter `*` as the **Glob Pattern** for now.
+![image](https://github.com/user-attachments/assets/50d89f39-9057-4649-986a-18944773776f)
 
 Run following command:
 
@@ -55,9 +56,6 @@ Import PowerShell Gallery module:
 ```powershell
 Install-Module -Name YourModuleName
 ```
-
-![image](https://github.com/user-attachments/assets/50d89f39-9057-4649-986a-18944773776f)
-
 
 ### PowerShell Gallery Errors:
 - IF you receive `"The specified API key is invalid, has expired, or does not have permission to access the specified package."` - it is likely your module shares a name with another public module. Change your PowerShell module name for the directory, `.psm1`, and `.psd1` files.
