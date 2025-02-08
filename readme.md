@@ -30,12 +30,14 @@ $env:PSModulePath = $env:PSModulePath + ";path/to/modules"
 If you want to upload a module to PowerShell Gallery:
 - Create a new directory with the name of the new module.
 - Create PowerShell .psm1 file with PowerShell function.
+- Create a new GUID by running `New-GUID`
 - Create PowerShell .psd1 file with PowerShell module information, ensuring to fill out `RootModule`, `GUID`, `FileList`.
 - `RootModule` = 'YourModuleName.psm1'
-- `GUID` = '##########' (Get GUID by using: `New-Guid`)
+- `GUID` = '##########'
 - `FileList` = @('YourModuleName.psm1')
 - Check `GalleryPSD1-Example.psd1` for more help
 - Grab API from [PowerShell Gallery](https://www.powershellgallery.com/account/apikeys)
+- When filling out the API Key, make sure to enter `*` as the GLOB for now.
 
 Run following command:
 
@@ -48,6 +50,8 @@ Import PowerShell Gallery module:
 ```powershell
 Install-Module -Name YourModuleName
 ```
+
+![image](https://github.com/user-attachments/assets/50d89f39-9057-4649-986a-18944773776f)
 
 
 ### PowerShell Gallery Errors:
